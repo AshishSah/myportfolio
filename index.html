@@ -29,3 +29,30 @@
 <div id="previewBox"></div>
 </body>
 </html>
+
+<script>
+const preview = document.getElementById("previewBox");
+
+document.querySelectorAll(".links a").forEach(link => {
+    link.addEventListener("mouseenter", () => {
+        preview.innerText = link.getAttribute("title");
+        preview.style.display = "block";
+    });
+
+    link.addEventListener("mouseleave", () => {
+        preview.style.display = "none";
+    });
+}); 
+</script>
+
+<script>
+document.querySelector("h1").addEventListener("click", () => {
+    alert("Thanks for visiting my portfolio 🚀");
+});
+</script>
+
+<script>
+document.body.addEventListener("click", () => {
+    console.log("User clicked somewhere 👀");
+});
+</script>
