@@ -57,3 +57,14 @@ p {
     background: #0ea5e9;
     transform: translateY(-3px);
 }
+
+#previewBox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1e293b;
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+    color: white;
+}
